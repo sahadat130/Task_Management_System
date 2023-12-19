@@ -32,7 +32,7 @@ namespace AuthApi.Controllers
 
                     //User Role Table Date save
                     UsersRole UR = new UsersRole();
-                    UR.RoleID = entity.RoleID;
+                    UR.RoleID = 3;
                     UR.UserID = entity.UserID;
                     await Uow.TblUsersRole.Add(UR);
 
