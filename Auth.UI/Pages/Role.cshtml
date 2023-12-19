@@ -1,0 +1,31 @@
+﻿@page
+@model RoleModel
+@{
+    ViewData["Title"] = "Role Info";
+}
+<h1>@ViewData["Title"]</h1>
+<script src="~/Script/AuthApp/Role.js"></script>
+<form ng-controller="RoleCtrl">
+    <div class="form-group">
+        <label>Role Name</label>
+        <input type="text" class="form-control" ng-model="RoleName" id="idRoleName">
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="Save()">{{btnText}}</button>
+
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Role</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in RoleList">
+                <td>{{item.RoleName}}</td>
+                <th><button class="btn btn-danger" ng-click="Edit(item)">Edit</button></th>
+            </tr>
+        </tbody>
+    </table>
+</form>

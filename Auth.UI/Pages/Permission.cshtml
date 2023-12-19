@@ -1,0 +1,43 @@
+﻿@page
+@model PermissionModel
+@{
+    ViewData["Title"] = "Permission Info";
+}
+<h1>@ViewData["Title"]</h1>
+<script src="~/Script/AuthApp/Permission.js"></script>
+<form ng-controller="PermissionCtrl">
+    <div class="form-group">
+        <label>Permission Name</label>
+        <select type="text" autocomplete="off" class="form-control" id="idPermissionName" ng-model="PermissionName" ng-options="d.Url as d.MenuName for d in MenuList">
+            <option value="">--------Select------</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label>Role</label>
+        <select type="text" autocomplete="off" class="form-control" id="idRoleId" ng-model="RoleID" ng-options="d.RoleID as d.RoleName for d in RoleList">
+            <option value="">--------Select------</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="Save()">{{btnText}}</button>
+
+
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th scope="col">Ser.</th>
+                <th scope="col">Permission Name</th>
+                <th scope="col">Role</th>
+                <th>Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in PermissionList">
+                <th>{{item.PermissionID}}</th>
+                <td>{{item.MenuName}}</td>
+                <td>{{item.RoleName}}</td>
+                <th><button class="btn btn-danger" ng-click="Edit(item)">Edit</button></th>
+            </tr>
+        </tbody>
+    </table>
+</form>

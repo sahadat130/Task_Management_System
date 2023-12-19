@@ -1,0 +1,22 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register Info";
+}
+<h1>@ViewData["Title"]</h1>
+<script src="~/Script/AuthApp/Register.js"></script>
+<form ng-controller="RegisterCtrl">
+    <div class="form-group">
+        <label>User Name</label>
+        <input type="text" class="form-control" ng-model="UserName" id="idusername">
+    </div>
+    <div class="form-group">
+        <label>Password</label>
+        <input type="text" class="form-control" ng-model="Password" id="idpassword">
+    </div>
+    <div class="form-group">
+        <label>E-mail</label>
+        <input type="text" class="form-control" ng-model="Email" id="idemail">
+    </div>
+    <button type="submit" class="btn btn-primary" ng-click="Save()">{{btnText}}</button>
+</form>

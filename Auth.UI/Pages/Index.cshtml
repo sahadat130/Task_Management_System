@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<script src="~/Script/AuthApp/Login.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<link href="~/css/Auth.css" rel="stylesheet" />
+<div class="wrapper fadeInDown" ng-controller="LoginCtrl">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <!-- Login Form -->
+        <form>
+            <input type="text" id="login" class="fadeIn second" name="login" ng-model="email" placeholder="login">
+            <input type="text" id="password" class="fadeIn third" name="login" ng-model="password" placeholder="password">
+            <input type="button" class="fadeIn fourth" value="Log In" ng-click="Login()">
+        </form>
+
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+            <a class="" asp-area="" asp-page="/Register">Register</a>
+            @*<a class="underlineHover" href="#">Register</a>*@
+        </div>
+
+    </div>
+</div>
