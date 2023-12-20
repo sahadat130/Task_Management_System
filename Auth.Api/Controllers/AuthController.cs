@@ -36,7 +36,7 @@ namespace AuthApi.Controllers
                     return new SessionDataModel()
                     {
                         MsgCode = "200",
-                        Msg = "Login Successfull",
+                        Msg = "Login Successfully",
                         UserID = search.UserID,
                         Token = Token,
                     };
@@ -46,7 +46,7 @@ namespace AuthApi.Controllers
                     return new SessionDataModel()
                     {
                         MsgCode = "500",
-                        Msg = "Login Unsuccessfull",
+                        Msg = "Login Unsuccessfully",
                     };
 
                 }
@@ -69,7 +69,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Menu Get Successfull",
+                    Msg = "Menu Get Successfully",
                     ResponseData = res,
                 };
             }
@@ -94,7 +94,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Menu Get Successfull",
+                    Msg = "Menu Get Successfully",
                     ResponseData = res,
                 };
             }

@@ -28,7 +28,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Role Get Successfull",
+                    Msg = "Role Get Successfully",
                     ResponseData = res,
                 };
             }
@@ -55,7 +55,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Role Save Successfull",
+                    Msg = "Role Save Successfully",
                 };
             }
             catch (Exception ex)
@@ -80,7 +80,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Role Update Successfull",
+                    Msg = "Role Update Successfully",
                 };
             }
             catch (Exception ex)

@@ -40,7 +40,7 @@ namespace AuthApi.Controllers
                     return new SessionDataModel()
                     {
                         MsgCode = "200",
-                        Msg = "User Save Successfull",
+                        Msg = "User Save Successfully",
                     };
                 }
                 catch (Exception ex)
@@ -77,7 +77,7 @@ namespace AuthApi.Controllers
                     return new SessionDataModel()
                     {
                         MsgCode = "200",
-                        Msg = "User Save Successfull",
+                        Msg = "User Save Successfully",
                     };
                 }
                 catch (Exception ex)
@@ -102,7 +102,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "User Get Successfull",
+                    Msg = "User Get Successfully",
                     ResponseData = res,
                 };
             }
@@ -135,7 +135,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "User Update Successfull",
+                    Msg = "User Update Successfully",
                 };
             }
             catch (Exception ex)

@@ -28,7 +28,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Information Save Successfull",
+                    Msg = "Information Save Successfully",
                 };
             }
             catch (Exception ex)
@@ -51,7 +51,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Information Update Successfull",
+                    Msg = "Information Update Successfully",
                 };
             }
             catch (Exception ex)
@@ -74,7 +74,7 @@ namespace AuthApi.Controllers
                 return new SessionDataModel()
                 {
                     MsgCode = "200",
-                    Msg = "Information Get Successfull",
+                    Msg = "Information Get Successfully",
                     ResponseData = res,
                 };
             }
