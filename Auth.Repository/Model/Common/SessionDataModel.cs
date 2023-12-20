@@ -4,10 +4,10 @@
     {
         public string MsgCode { get; set; }
         public string Msg { get; set; }
-        public int UserID { get; set; }
-        public string UserName { get; set; }
-        public string Token { get; set; }
-        public dynamic ResponseData { get; set; }
+        public int UserID { get; set; } = 0;
+        public string UserName { get; set; } = "N/A";
+        public string Token { get; set; } = "N/A";
+        public dynamic ResponseData { get; set; } = "N/A";
 
     }
 }
